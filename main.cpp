@@ -19,29 +19,21 @@ using namespace miniplc0;
 	}
 
 	void CA(std::istream& input, std::ostream& output) {
-		/*
-		auto v = _tokenize(input);
-		for (auto& it : v)
-			output << fmt::format("{}\n", it);
-		return;*/
+		
 		auto vc = _tokenize(input);
 		miniplc0::Analyser analyser(vc);
 		auto err = analyser.Analyse();
+		if (err.second.has_value()) {
+			//printf("sth wrong with analyser");
+			exit(0);
+		}
+
+		analyser.printBinary(output);
 		return;
 	}
 
 	void SA(std::istream& input, std::ostream& output) {
-		/*auto tks = _tokenize(input);
-		miniplc0::Analyser analyser(tks);
-		auto p = analyser.Analyse();
-		if (p.second.has_value()) {
-			fmt::print(stderr, "Syntactic analysis error: {}\n", p.second.value());
-			exit(2);
-		}
-		auto v = p.first;
-		for (auto& it : v)
-			output << fmt::format("{}\n", it);
-		return;*/
+		
 
 		auto vc = _tokenize(input);
 		miniplc0::Analyser analyser(vc);
@@ -50,12 +42,11 @@ using namespace miniplc0;
 			//printf("sth wrong with analyser");
 			exit(0);
 		}
-		printf("hlwd\n");
 
 		output << ".constants:\n";
 		auto citer = analyser._consts.begin();
 		while (citer != analyser._consts.end()) {
-			output << citer->second->index<<"\t"<< char(citer->second->type) << "\t"<<citer->first<<"\n";
+			output << citer->second->index<<"\t"<< char(citer->second->type) << "\t\""<<citer->first<<"\"\n";
 			citer++;
 		}
 		output << ".start:\n";
@@ -67,8 +58,8 @@ using namespace miniplc0;
 			output << i << "\t" << analyser.Sins.at(i)->_opr;
 			if(!analyser.Sins.at(i)->_x.empty())
 				output<< "\t" << analyser.Sins.at(i)->_x ;
-			if (analyser.Sins.at(i)->_y.empty())
-				output << "\t" << analyser.Sins.at(i)->_y;
+			if (!analyser.Sins.at(i)->_y.empty())
+				output << "," << analyser.Sins.at(i)->_y;
 			siter++;
 			i++;
 
@@ -97,12 +88,10 @@ using namespace miniplc0;
 				output << j << "\t" << analyser.Ains[ss].at(j)->_opr;
 				if (!analyser.Ains[ss].at(j)->_x.empty()) {
 
-					printf("t %s \n", analyser.Ains[ss].at(j)->_x.c_str());
 					output << "\t" << analyser.Ains[ss].at(j)->_x.c_str();
 				}
 				if (!analyser.Ains[ss].at(j)->_y.empty()) {
-					printf("i knew\n");
-					output << "\t" << analyser.Ains[ss].at(j)->_y;
+					output << "," << analyser.Ains[ss].at(j)->_y;
 				}
 				itx++;
 				j++;

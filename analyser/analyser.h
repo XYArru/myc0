@@ -54,8 +54,10 @@ namespace miniplc0 {
 		Analyser(const Analyser&) = delete;
 		Analyser& operator=(Analyser) = delete;
 
-		// 唯一接口
+		// 唯二接口
 		std::pair<std::vector<Opr*>, std::optional<CompilationError>> Analyse();
+
+		void Analyser::printBinary(std::ostream& output);
 	private:
 		// 所有的递归子程序
 
@@ -82,6 +84,9 @@ namespace miniplc0 {
 		std::optional<CompilationError> Analyser::analysePDL();
 		std::optional<CompilationError> Analyser::analysePD();
 		std::optional<CompilationError> Analyser::analyseFunCall();
+		void Analyser::binary2byte(int number, std::ostream& output);
+		void Analyser::binary4byte(int number, std::ostream& output);
+		void Analyser::printBinaryInstruction(Opr* opr, std::ostream& output);
 
 
 		// Token 缓冲区相关操作
