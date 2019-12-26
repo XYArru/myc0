@@ -1,0 +1,56 @@
+Performing C++ SOURCE FILE Test FMT_HAS_VARIANT failed with the following output:
+Change Dir: C:/Users/Lenovo/Desktop/code/miniplc0-compiler/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/MinGW/bin/mingw32-make.exe cmTC_4bdfa/fast && D:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_4bdfa.dir\build.make CMakeFiles/cmTC_4bdfa.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Lenovo/Desktop/code/miniplc0-compiler/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4bdfa.dir/src.cxx.obj
+D:\MinGW\bin\g++.exe    -DFMT_HAS_VARIANT -std=c++1z   -std=gnu++11 -o CMakeFiles\cmTC_4bdfa.dir\src.cxx.obj -c C:\Users\Lenovo\Desktop\code\miniplc0-compiler\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx
+C:\Users\Lenovo\Desktop\code\miniplc0-compiler\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx:2:21: fatal error: variant: No such file or directory
+   #include <variant>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_4bdfa.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_4bdfa.dir/src.cxx.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_4bdfa.dir/src.cxx.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Lenovo/Desktop/code/miniplc0-compiler/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:120: recipe for target 'cmTC_4bdfa/fast' failed
+mingw32-make.exe: *** [cmTC_4bdfa/fast] Error 2
+
+
+Source file was:
+
+  #include <variant>
+  int main() {}
+Determining if the _strtod_l exist failed with the following output:
+Change Dir: C:/Users/Lenovo/Desktop/code/miniplc0-compiler/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/MinGW/bin/mingw32-make.exe cmTC_a0c83/fast && D:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_a0c83.dir\build.make CMakeFiles/cmTC_a0c83.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Lenovo/Desktop/code/miniplc0-compiler/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a0c83.dir/CheckSymbolExists.c.obj
+D:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTC_a0c83.dir\CheckSymbolExists.c.obj   -c C:\Users\Lenovo\Desktop\code\miniplc0-compiler\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+C:\Users\Lenovo\Desktop\code\miniplc0-compiler\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+C:\Users\Lenovo\Desktop\code\miniplc0-compiler\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:8:19: error: '_strtod_l' undeclared (first use in this function)
+   return ((int*)(&_strtod_l))[argc];
+                   ^~~~~~~~~
+C:\Users\Lenovo\Desktop\code\miniplc0-compiler\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+CMakeFiles\cmTC_a0c83.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_a0c83.dir/CheckSymbolExists.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_a0c83.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Lenovo/Desktop/code/miniplc0-compiler/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:120: recipe for target 'cmTC_a0c83/fast' failed
+mingw32-make.exe: *** [cmTC_a0c83/fast] Error 2
+
+
+File C:/Users/Lenovo/Desktop/code/miniplc0-compiler/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strtod_l
+  return ((int*)(&_strtod_l))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

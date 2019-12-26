@@ -1,0 +1,20 @@
+Performing C++ SOURCE FILE Test has_std_11_flag failed with the following output:
+Change Dir: C:/Users/Lenovo/Desktop/17373494_杨智茹_02/17373494_杨智茹_mini/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:\VS2019C\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe cmTC_563de && [1/2] Building CXX object CMakeFiles\cmTC_563de.dir\src.cxx.obj
+cl: 命令行 warning D9002 :忽略未知选项“-std=c++11”
+[2/2] Linking CXX executable cmTC_563de.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test has_std_0x_flag failed with the following output:
+Change Dir: C:/Users/Lenovo/Desktop/17373494_杨智茹_02/17373494_杨智茹_mini/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:\VS2019C\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe cmTC_e5b9a && [1/2] Building CXX object CMakeFiles\cmTC_e5b9a.dir\src.cxx.obj
+cl: 命令行 warning D9002 :忽略未知选项“-std=c++0x”
+[2/2] Linking CXX executable cmTC_e5b9a.exe
+
+
+Source file was:
+int main() { return 0; }

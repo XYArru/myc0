@@ -1,0 +1,20 @@
+.constants:
+0	S	fun
+1	S	main
+.start:
+0	ipush	19	
+1	snew	
+2	aload	0
+3	iload	
+.functions:
+0	0	1	1
+1	1	1	1
+.F0:
+0	aload	0	0
+1	iload
+2	ineg
+3	iret
+.F1:
+0	aload	0	0
+1	ipush	1
+2	iret

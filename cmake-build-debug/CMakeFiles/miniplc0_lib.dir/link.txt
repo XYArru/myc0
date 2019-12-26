@@ -1,0 +1,2 @@
+D:\MinGW\bin\ar.exe qc libminiplc0_lib.a  CMakeFiles/miniplc0_lib.dir/tokenizer/tokenizer.cpp.obj CMakeFiles/miniplc0_lib.dir/analyser/analyser.cpp.obj
+D:\MinGW\bin\ranlib.exe libminiplc0_lib.a

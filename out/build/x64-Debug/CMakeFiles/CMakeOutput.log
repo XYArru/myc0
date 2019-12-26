@@ -1,0 +1,139 @@
+The system is: Windows - 10.0.18362 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: D:/vs2019c/VC/Tools/MSVC/14.23.28105/bin/HostX64/x64/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.23.28107 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+CMakeCCompilerId.c
+Microsoft (R) Incremental Linker Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCCompilerId.exe 
+CMakeCCompilerId.obj 
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+
+The C compiler identification is MSVC, found in "C:/Users/Lenovo/Desktop/17373494_杨智茹_02/17373494_杨智茹_mini/out/build/x64-Debug/CMakeFiles/3.15.19080502-MSVC_2/CompilerIdC/CMakeCCompilerId.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: D:/vs2019c/VC/Tools/MSVC/14.23.28105/bin/HostX64/x64/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.23.28107 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 14.23.28107.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "C:/Users/Lenovo/Desktop/17373494_杨智茹_02/17373494_杨智茹_mini/out/build/x64-Debug/CMakeFiles/3.15.19080502-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/Users/Lenovo/Desktop/17373494_杨智茹_02/17373494_杨智茹_mini/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:\VS2019C\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe cmTC_abe91 && [1/2] Building C object CMakeFiles\cmTC_abe91.dir\testCCompiler.c.obj
+[2/2] Linking C executable cmTC_abe91.exe
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Users/Lenovo/Desktop/17373494_杨智茹_02/17373494_杨智茹_mini/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:\VS2019C\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe cmTC_a7704 && [1/2] Building C object CMakeFiles\cmTC_a7704.dir\CMakeCCompilerABI.c.obj
+[2/2] Linking C executable cmTC_a7704.exe
+
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/Users/Lenovo/Desktop/17373494_杨智茹_02/17373494_杨智茹_mini/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:\VS2019C\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe cmTC_ae52a && [1/2] Building CXX object CMakeFiles\cmTC_ae52a.dir\testCXXCompiler.cxx.obj
+[2/2] Linking CXX executable cmTC_ae52a.exe
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/Users/Lenovo/Desktop/17373494_杨智茹_02/17373494_杨智茹_mini/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:\VS2019C\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe cmTC_e37a8 && [1/2] Building CXX object CMakeFiles\cmTC_e37a8.dir\CMakeCXXCompilerABI.cpp.obj
+[2/2] Linking CXX executable cmTC_e37a8.exe
+
+
+
+Performing C++ SOURCE FILE Test SUPPORTS_VARIADIC_TEMPLATES succeeded with the following output:
+Change Dir: C:/Users/Lenovo/Desktop/17373494_杨智茹_02/17373494_杨智茹_mini/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:\VS2019C\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe cmTC_5848f && [1/2] Building CXX object CMakeFiles\cmTC_5848f.dir\src.cxx.obj
+[2/2] Linking CXX executable cmTC_5848f.exe
+
+
+Source file was:
+
+  template <class T, class ...Types>
+  struct S { typedef typename S<Types...>::type type; };
+  int main() {}
+Performing C++ SOURCE FILE Test SUPPORTS_USER_DEFINED_LITERALS succeeded with the following output:
+Change Dir: C:/Users/Lenovo/Desktop/17373494_杨智茹_02/17373494_杨智茹_mini/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:\VS2019C\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe cmTC_0ec0e && [1/2] Building CXX object CMakeFiles\cmTC_0ec0e.dir\src.cxx.obj
+[2/2] Linking CXX executable cmTC_0ec0e.exe
+
+
+Source file was:
+
+  void operator"" _udl(long double);
+  int main() {}
+Performing C++ SOURCE FILE Test FMT_HAS_VARIANT succeeded with the following output:
+Change Dir: C:/Users/Lenovo/Desktop/17373494_杨智茹_02/17373494_杨智茹_mini/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:\VS2019C\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe cmTC_2c312 && [1/2] Building CXX object CMakeFiles\cmTC_2c312.dir\src.cxx.obj
+cl: 命令行 warning D9002 :忽略未知选项“-std=c++1z”
+class template variant is only available with C++17 or later.
+[2/2] Linking CXX executable cmTC_2c312.exe
+
+
+Source file was:
+
+  #include <variant>
+  int main() {}
+Determining if the _strtod_l exist passed with the following output:
+Change Dir: C:/Users/Lenovo/Desktop/17373494_杨智茹_02/17373494_杨智茹_mini/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:\VS2019C\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\CMAKE\Ninja\ninja.exe cmTC_b3a19 && [1/2] Building C object CMakeFiles\cmTC_b3a19.dir\CheckSymbolExists.c.obj
+[2/2] Linking C executable cmTC_b3a19.exe
+
+
+File C:/Users/Lenovo/Desktop/17373494_杨智茹_02/17373494_杨智茹_mini/out/build/x64-Debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strtod_l
+  return ((int*)(&_strtod_l))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
